@@ -1,24 +1,20 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# GKPT
+## 仕様
+GKPTを行うためのアプリ
+## 機能
+- ユーザ
+  - サインアップ（未実装）
+  - サインイン（未実装）
+  - サインアウト（未実装）
+- KPT
+  - 作成機能（未実装）
+  - 一覧機能（未実装）
+  - 詳細表示機能（未実装）
+  - 更新機能（未実装）
+  - 削除機能（未実装）
+- Try
+  - 作成機能（未実装）
+  - 一覧機能（未実装）
+  - 詳細表示機能（未実装）
+  - 更新機能（未実装）
+  - 削除機能（未実装）
