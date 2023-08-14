@@ -96,6 +96,7 @@ GEM
       warden (~> 1.2.3)
     devise-i18n (1.11.0)
       devise (>= 4.9.0)
+    devise-i18n-views (0.3.7)
     dotenv (2.8.1)
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
@@ -235,6 +236,7 @@ DEPENDENCIES
   debug
   devise
   devise-i18n
+  devise-i18n-views
   dotenv-rails
   importmap-rails
   jbuilder
