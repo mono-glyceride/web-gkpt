@@ -5,6 +5,10 @@ WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
 
+# Node.jsとnpmのインストール
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN apt-get install -y nodejs npm
+
 # Bundlerの不具合対策(1)
 RUN gem update --system
 RUN bundle update --bundler
