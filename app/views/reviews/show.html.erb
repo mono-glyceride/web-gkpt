@@ -8,4 +8,5 @@
     </div>
   </div>
   <%= link_to "戻る", reviews_path, class: "btn btn-secondary" %>
+  <%= button_to "削除する", review_path(@review), method: :delete, data: { confirm: '本当に削除しますか？' }, class: "btn btn-danger mt-3" %>
 </div>
