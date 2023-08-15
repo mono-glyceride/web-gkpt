@@ -9,6 +9,9 @@ COPY Gemfile.lock /myapp/Gemfile.lock
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get install -y nodejs npm
 
+# Yarnのインストール
+RUN npm install -g yarn
+
 # Bundlerの不具合対策(1)
 RUN gem update --system
 RUN bundle update --bundler
