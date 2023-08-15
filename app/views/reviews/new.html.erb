@@ -1,0 +1,17 @@
+<div class="container mt-4">
+  <div class="card mb-3">
+    <div class="card-header">
+      <%= Time.now %>
+    </div>
+    <div class="card-body">
+      <%= form_with model: @gkpt, url: reviews_path, local: true do |form| %>
+        <div class="mb-3">
+          <%= form.label :topic, class: "form-label" %>
+          <%= form.text_field :topic, class: "form-control" %>
+        </div>
+        <%= form.submit "作成する", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+  <%= link_to "戻る", reviews_path, class: "btn btn-secondary" %>
+</div>

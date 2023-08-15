@@ -1,0 +1,15 @@
+<div class="container mt-4">
+  <h1>GKPT</h1>
+  <%= link_to new_review_path, class: "btn btn-primary mb-3" do %>
+    <i class="fa-solid fa-plus"></i>
+  <% end %>
+  <% @reviews.each do |review| %>
+    <%= link_to review_path(review) do %>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title"><%= review.topic %></h5>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
